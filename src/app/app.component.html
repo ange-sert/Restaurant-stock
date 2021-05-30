@@ -9,13 +9,13 @@
 </head>  
 <body ng-controller="myController">  
     <div class="container py-3">  
- <table border="5px" bordercolor="#8707B0">
-  <thead>
+ <table class="table">
+  <thead class="thead-dark">
         <th>id</th>
 
     <th>Content</th>
     <th>Quantity</th>
-    <th>Price per kg/ltr/vat</th>
+    <th>Unit Price</th>
     <th>Price</th>
   </thead>
   <tbody>
@@ -26,12 +26,27 @@
       <td>{{beefstew1piece.quantity}}</td>
       <td>{{beefstew1piece.unit_price}}</td>
       <td>{{beefstew1piece.quantity * beefstew1piece.unit_price}}</td>
-    
-      <td>
-          
-          <!-- <button (click)="delete(beefstew1piece.id)">Delete</button> -->
-      </td>
     </tr>
+    <tr>   
+     <td colspan="3"></td>
+      <td><b>Plate Cost:</b></td>
+      <td><b>50</b></td> </tr>
+      <tr>
+      <td colspan="3"></td>
+      <td><b>SubTotal:</b></td>
+      <td><b>N 7,350.00</b></td>
+    </tr>
+            
+      <tr>
+        <td colspan="3"></td>
+        <td><b>Add 10% Variance: </b></td>
+        <td> <b>N 735.00</b></td>
+      </tr>
+      <tr>
+        <td colspan="3"></td>
+        <td><b>Total :</b> </td>
+        <td> <b>N 8,085.</b></td> 
+      </tr>
   </tbody>
 </table>
     </div>  

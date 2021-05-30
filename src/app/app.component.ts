@@ -12,16 +12,22 @@ export class AppComponent implements OnInit {
   
   beefstew1piece: Beefstew1piece[] = [];
   constructor(private beefstew1pieceService: Beefstew1pieceService) {}
-
-  ngOnInit() {
+  private total=0;    
+  // private value;
+    ngOnInit() {
     this.beefstew1pieceService.getBeefStew1Pieces().subscribe((data) => {
       this.beefstew1piece = data.map((e) => {
         return {
           id: e.payload.doc.id,
           ...(e.payload.doc.data() as {}),
         } as Beefstew1piece;
+        
       });
     });
+   
+  }
+  findsum(beefstew1piece: Beefstew1piece[]) {
+    throw new Error("Method not implemented.");
   }
   create(beefstew1piece: Beefstew1piece) {
     this.beefstew1pieceService.createBeefStew1Piece(beefstew1piece);
