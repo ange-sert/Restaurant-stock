@@ -25,16 +25,16 @@
       <td>{{beefstew1piece.content}}</td>
       <td>{{beefstew1piece.quantity}}</td>
       <td>{{beefstew1piece.unit_price}}</td>
-      <td>{{beefstew1piece.quantity * beefstew1piece.unit_price}}</td>
+      <td>N{{beefstew1piece.quantity * beefstew1piece.unit_price}}</td>
     </tr>
     <tr>   
      <td colspan="3"></td>
       <td><b>Plate Cost:</b></td>
-      <td><b>50</b></td> </tr>
+      <td><b>N50</b></td> </tr>
       <tr>
       <td colspan="3"></td>
       <td><b>SubTotal:</b></td>
-      <td><b>N 7,350.00</b></td>
+      <td><b>N7,350.00</b></td>
     </tr>
             
       <tr>
@@ -45,7 +45,7 @@
       <tr>
         <td colspan="3"></td>
         <td><b>Total :</b> </td>
-        <td> <b>N 8,085.</b></td> 
+        <td><b>{{getTotalAmount()}}</b></td> 
       </tr>
   </tbody>
 </table>
