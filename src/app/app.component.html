@@ -1,0 +1,39 @@
+<!DOCTYPE html>  
+  
+<html ng-app="myModule">  
+<head>  
+    <title>Shopping Card</title>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">  
+    
+</head>  
+<body ng-controller="myController">  
+    <div class="container py-3">  
+ <table border="5px" bordercolor="#8707B0">
+  <thead>
+        <th>id</th>
+
+    <th>Content</th>
+    <th>Quantity</th>
+    <th>Price per kg/ltr/vat</th>
+    <th>Price</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let beefstew1piece of beefstew1piece">
+      <td>{{beefstew1piece.id}}</td>
+
+      <td>{{beefstew1piece.content}}</td>
+      <td>{{beefstew1piece.quantity}}</td>
+      <td>{{beefstew1piece.unit_price}}</td>
+      <td>{{beefstew1piece.quantity * beefstew1piece.unit_price}}</td>
+    
+      <td>
+          
+          <!-- <button (click)="delete(beefstew1piece.id)">Delete</button> -->
+      </td>
+    </tr>
+  </tbody>
+</table>
+    </div>  
+</body>  
+</html> 

@@ -1,0 +1,21 @@
+<p>beef-stew1-piecw-list works!</p>
+<table>
+  <thead>
+    <th>Content</th>
+    <th>Quantity</th>
+    <th>Price per kg/ltr/vat</th>
+    <th>Price</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let beefstew1piece of beefstew1piece">
+
+      <td>{{beefstew1piece.content}}</td>
+      <td>{{beefstew1piece.quantity}}</td>
+      <td>{{beefstew1piece.unit_price}}</td>
+      <td>{{beefstew1piece.price}}</td>
+      <td>
+          <!-- <button (click)="delete(beefstew1piece.id)">Delete</button> -->
+      </td>
+    </tr>
+  </tbody>
+</table>
