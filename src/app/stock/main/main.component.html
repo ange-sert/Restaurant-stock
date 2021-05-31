@@ -89,47 +89,60 @@
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Stock List</h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
-                  <thead>
-                  <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th>Platform(s)</th>
-                    <th>Engine version</th>
-                    <th>CSS grade</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr *ngFor="let beefstew1piece of beefstew1piece">
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 4.0
-                    </td>
-                    <td>Win 95+</td>
-                    <td> 4</td>
-                    <td>X</td>
-                  </tr>
+						<div class="card-header">
+							<h3 class="card-title">Stock List</h3>
+						</div>
+						<!-- /.card-header -->
+						<div class="card-body">
 
-                  </tbody>
-                  <tfoot>
-                  <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th>Platform(s)</th>
-                    <th>Engine version</th>
-                    <th>CSS grade</th>
-                  </tr>
-                  </tfoot>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-xs-6"></div>
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<button type="button" class="btn btn-success btn-block btn-flat"  data-toggle="modal" data-target="#exampleModal">Create New Stock Item</button>
+								</div>
+							</div>
+
+							<br>
+
+							<table id="example1" class="table table-bordered table-striped">
+								<thead>
+									<tr>
+										<th>Product Name</th>
+										<th>Group</th>
+										<th>UOM</th>
+										<th>Price</th>
+										<th>Stock</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr *ngFor="let product of products">
+										<td>{{product.name}}</td>
+										<td>{{product.product_category}}</td>
+										<td></td>
+										<td>{{product.unit_price}}</td>
+										<td>{{product.quantity}}</td>
+										<td>
+											<button type="button" class="btn btn-block btn-info btn-xs">View</button>
+										</td>
+									</tr>
+
+								</tbody>
+								<tfoot>
+									<tr>
+										<th>Product Name</th>
+										<th>Group</th>
+										<th>UOM</th>
+										<th>Price</th>
+										<th>Stock</th>
+										<th></th>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+						<!-- /.card-body -->
+					</div>
+					<!-- /.card -->
 				</div>
 			</div>
 
@@ -142,3 +155,151 @@
 
 
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+
+			<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Create New Stock Item</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-8 col-sm-6 col-xs-6">
+						
+
+							<div class="row">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<div class="form-group">
+										<label>Product Category</label>
+										<select 
+										class="form-control select2" 
+										style="width: 100%;" 
+										formControlName="product_category"
+										name="product_category"
+										id="product_category"
+										>
+											<option value="0" selected="selected">Select</option>
+											<option value="1">Bakery</option>
+											<option value="2">Beverage</option>
+											<option value="3">Cleaning Material</option>
+											<option value="4">Cold Meat</option>
+											<option value="5">Dairy</option>
+											<option value="6">Dry Store</option>
+											<option value="7">Fish</option>
+											<option value="8">Fruit And Vegetables</option>
+											<option value="9">Herbs & Spices</option>
+											<option value="10">Meat</option>
+											<option value="11">Pork</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<label>Product Name</label>
+									<div class="input-group mb-3">
+										<input 
+										type="text" 
+										class="form-control" 
+										placeholder="Product name"
+										formControlName="name"
+										name="name"
+										id="name"
+										>
+										<div class="input-group-append">
+											<div class="input-group-text">
+												<span class="fas fa-user"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<label>Product Price</label>
+									<div class="input-group mb-3">
+										<input
+											type="text" 
+										class="form-control" 
+										placeholder="Product Unit Price"
+										formControlName="unit_price"
+										name="unit_price"
+										id="unit_price"
+										>
+										<div class="input-group-append">
+											<div class="input-group-text">
+												<span class="fas fa-user"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<label>Stock Quantity</label>
+									<div class="input-group mb-3">
+										<input 
+										type="text" 
+										class="form-control" 
+										placeholder="Stock Quantity"
+										formControlName="quantity"
+										name="quantity"
+										id="quantity"
+										>
+										<div class="input-group-append">
+											<div class="input-group-text">
+												<span class="fas fa-user"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<div class="form-group">
+										<label>Product Description</label>
+										<textarea 
+										class="form-control" 
+										rows="3" 
+										placeholder="Product description here"
+										formControlName="description"
+										name="description"
+										id="description"
+										></textarea>
+									</div>
+								</div>
+							</div>
+
+
+
+						
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xs-6">
+
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<button type="button" class="btn btn-secondary btn-block"  data-dismiss="modal">Close</button>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<button type="submit" class="btn btn-success btn-block">Save Product</button>
+					</div>
+				</div>
+				
+				
+			</div>
+
+			</form>
+		</div>
+	</div>
+</div>

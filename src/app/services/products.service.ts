@@ -15,9 +15,20 @@ export class ProductsService {
     return this.firestore.collection('product').snapshotChanges();
   }
 
-  createProducts(product: Products) {
+  createProduct(product: Products) {
     return this.firestore.collection('product').add(product);
+    return this.firestore
+		.collection("product")
+		.add({
+			name: product.name,
+			description: product.description,
+			image: product.image,
+			unit_price: product.unit_price,
+			product_category: product.product_category,
+			quantity: product.quantity
+		});
   }
+
   updateProducts(product: Products) {
     delete product.id;
     this.firestore

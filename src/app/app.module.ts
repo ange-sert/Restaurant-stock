@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+
+//firestore
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
@@ -13,9 +17,12 @@ import { MainComponent } from './stock/main/main.component';
   declarations: [AppComponent, BeefStew1PiecwListComponent, MainComponent],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
+    FormsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
