@@ -7,9 +7,10 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BeefStew1PiecwListComponent } from './beef-stew1-piecw-list/beef-stew1-piecw-list.component';
+import { MainComponent } from './stock/main/main.component';
 
 @NgModule({
-  declarations: [AppComponent, BeefStew1PiecwListComponent],
+  declarations: [AppComponent, BeefStew1PiecwListComponent, MainComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
