@@ -138,7 +138,10 @@
 											<span *ngIf="product.product_category== 10">Meat</span>
 											<span *ngIf="product.product_category== 11">Pork</span>
 										</td>
-										<td>{{product.product_category}}</td>
+										<td>
+											<span *ngIf="product.uom == 1">KG</span>
+											<span *ngIf="product.uom == 2">Litres</span>
+										</td>
 										<td>{{product.unit_price}}</td>
 										<td>{{product.quantity}}</td>
 										<td>
@@ -189,7 +192,7 @@
 			</div>
 			<div class="modal-body">
 				<div class="row">
-					<div class="col-md-8 col-sm-6 col-xs-6">
+					<div class="col-md-8 col-sm-12 col-xs-12">
 						
 
 							<div class="row">
@@ -197,7 +200,7 @@
 									<div class="form-group">
 										<label>Product Category</label>
 										<select 
-										class="form-control select2" 
+										class="form-control select5" 
 										style="width: 100%;" 
 										formControlName="product_category"
 										name="product_category"
@@ -242,7 +245,7 @@
 							</div>
 
 							<div class="row">
-								<div class="col-md-6 col-sm-6 col-xs-6">
+								<div class="col-md-4 col-sm-6 col-xs-6">
 									<label>Product Unit Price</label>
 									<div class="input-group mb-3">
 										<input
@@ -260,7 +263,23 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-md-6 col-sm-6 col-xs-6">
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="form-group">
+										<label>Unit Of Measurement</label>
+										<select 
+										class="form-control select3" 
+										style="width: 100%;" 
+										formControlName="uom"
+										name="uom"
+										id="uom"
+										>
+											<option value="0" selected="selected">Select</option>
+											<option value="1">KG</option>
+											<option value="2">Litres</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-6">
 									<label>Stock Quantity</label>
 									<div class="input-group mb-3">
 										<input 
@@ -285,7 +304,7 @@
 									<div class="form-group">
 										<label>Supplier</label>
 										<select 
-										class="form-control select2" 
+										class="form-control select4" 
 										style="width: 100%;" 
 										formControlName="supplier"
 										name="supplier"
@@ -322,7 +341,7 @@
 						
 					</div>
 
-					<div class="col-md-4 col-sm-6 col-xs-6">
+					<div class="col-md-4 col-sm-12 col-xs-12">
 						<img src="assets/img/food_default.png" alt="..." class="img-thumbnail">
 					</div>
 

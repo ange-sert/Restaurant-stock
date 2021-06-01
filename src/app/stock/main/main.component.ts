@@ -34,6 +34,7 @@ export class MainComponent implements OnInit {
       product_category:[''],
       quantity: [''],
       supplier: [''],
+      uom: [''],
     })
   }
 
@@ -83,6 +84,10 @@ export class MainComponent implements OnInit {
     return this.productForm.get('supplier')
   }
 
+  get uom(){
+    return this.productForm.get('uom')
+  }
+
 
 
 
@@ -94,15 +99,9 @@ export class MainComponent implements OnInit {
 
   onSubmit() {
     this.productsService.createProduct(this.productForm.value);
+    console.log(this.productForm.value)
   };
 
 
-  update(beefstew1piece: Beefstew1piece) {
-    this.beefstew1pieceService.updateBeefStew1Piece(beefstew1piece);
-  }
-
-  delete(id: string) {
-    this.beefstew1pieceService.deleteBeefStew1Piece(id);
-  }
 
 }

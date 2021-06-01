@@ -16,13 +16,14 @@ import { BeefStew1PiecwListComponent } from './beef-stew1-piecw-list/beef-stew1-
 import { MainComponent } from './stock/main/main.component';
 import { RecipeMainComponent } from './recipe/recipe-main/recipe-main.component';
 import { RecipeDishComponent } from './recipe/recipe-dish/recipe-dish.component';
+import { SuppliersMainComponent } from './suppliers/suppliers-main/suppliers-main.component';
 
 @NgModule({
   declarations: [
   AppComponent, 
   BeefStew1PiecwListComponent, 
   MainComponent,  
-  RecipeMainComponent, RecipeDishComponent
+  RecipeMainComponent, RecipeDishComponent, SuppliersMainComponent
   ],
   imports: [
   BrowserModule,

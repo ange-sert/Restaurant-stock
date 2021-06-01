@@ -1,4 +1,4 @@
-export default class Recipes {
+export class Recipes {
 	id?: string;
 	name?: any;
 	description?: any;
