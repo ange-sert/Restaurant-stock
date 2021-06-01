@@ -5,12 +5,12 @@
 		<div class="container-fluid">
 			<div class="row mb-2">
 				<div class="col-sm-6">
-					<h1 class="m-0 text-dark">Dashboard</h1>
+					<h1 class="m-0 text-dark">Stock</h1>
 				</div><!-- /.col -->
 				<div class="col-sm-6">
 					<ol class="breadcrumb float-sm-right">
 						<li class="breadcrumb-item"><a href="#">Home</a></li>
-						<li class="breadcrumb-item active">Dashboard</li>
+						<li class="breadcrumb-item active">Stock</li>
 					</ol>
 				</div><!-- /.col -->
 			</div><!-- /.row -->
@@ -30,7 +30,7 @@
 						<div class="info-box-content">
 							<span class="info-box-text">Stock</span>
 							<span class="info-box-number">
-								10
+								-
 							</span>
 						</div>
 						<!-- /.info-box-content -->
@@ -44,7 +44,7 @@
 
 						<div class="info-box-content">
 							<span class="info-box-text">Recipes</span>
-							<span class="info-box-number">41,410</span>
+							<span class="info-box-number">-</span>
 						</div>
 						<!-- /.info-box-content -->
 					</div>
@@ -61,7 +61,7 @@
 
 						<div class="info-box-content">
 							<span class="info-box-text">Sales</span>
-							<span class="info-box-number">760</span>
+							<span class="info-box-number">-</span>
 						</div>
 						<!-- /.info-box-content -->
 					</div>
@@ -73,8 +73,8 @@
 						<span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
 
 						<div class="info-box-content">
-							<span class="info-box-text">Members</span>
-							<span class="info-box-number">2,000</span>
+							<span class="info-box-text">Suppliers</span>
+							<span class="info-box-number">-</span>
 						</div>
 						<!-- /.info-box-content -->
 					</div>
@@ -108,9 +108,10 @@
 								<thead>
 									<tr>
 										<th>Product Name</th>
+										<th>Supplier</th>
 										<th>Group</th>
 										<th>UOM</th>
-										<th>Price</th>
+										<th>Price (N)</th>
 										<th>Stock</th>
 										<th></th>
 									</tr>
@@ -118,8 +119,26 @@
 								<tbody>
 									<tr *ngFor="let product of products">
 										<td>{{product.name}}</td>
+										<td>
+											<span *ngIf="product.supplier== 1">The Fat Butcher</span>
+											<span *ngIf="product.supplier== 2">Sensor Merchant</span>
+											<span *ngIf="product.supplier== 3">Restaurent Veg Supply</span>
+											<span *ngIf="product.supplier== 4">Deli Frost</span>
+										</td>
+										<td>
+											<span *ngIf="product.product_category== 1">Bakery</span>
+											<span *ngIf="product.product_category== 2">Beverage</span>
+											<span *ngIf="product.product_category== 3">Cleaning Material</span>
+											<span *ngIf="product.product_category== 4">Cold Meat</span>
+											<span *ngIf="product.product_category== 5">Dairy</span>
+											<span *ngIf="product.product_category== 6">Dry Store</span>
+											<span *ngIf="product.product_category== 7">Fish</span>
+											<span *ngIf="product.product_category== 8">Fruit And Vegetables</span>
+											<span *ngIf="product.product_category== 9">Herbs & Spices</span>
+											<span *ngIf="product.product_category== 10">Meat</span>
+											<span *ngIf="product.product_category== 11">Pork</span>
+										</td>
 										<td>{{product.product_category}}</td>
-										<td></td>
 										<td>{{product.unit_price}}</td>
 										<td>{{product.quantity}}</td>
 										<td>
@@ -131,9 +150,10 @@
 								<tfoot>
 									<tr>
 										<th>Product Name</th>
+										<th>Supplier</th>
 										<th>Group</th>
 										<th>UOM</th>
-										<th>Price</th>
+										<th>Price (N)</th>
 										<th>Stock</th>
 										<th></th>
 									</tr>
@@ -214,7 +234,7 @@
 										>
 										<div class="input-group-append">
 											<div class="input-group-text">
-												<span class="fas fa-user"></span>
+												<span class="fas fa-mitten"></span>
 											</div>
 										</div>
 									</div>
@@ -223,7 +243,7 @@
 
 							<div class="row">
 								<div class="col-md-6 col-sm-6 col-xs-6">
-									<label>Product Price</label>
+									<label>Product Unit Price</label>
 									<div class="input-group mb-3">
 										<input
 											type="text" 
@@ -235,7 +255,7 @@
 										>
 										<div class="input-group-append">
 											<div class="input-group-text">
-												<span class="fas fa-user"></span>
+												<span class="fas fa-dollar-sign"></span>
 											</div>
 										</div>
 									</div>
@@ -253,9 +273,30 @@
 										>
 										<div class="input-group-append">
 											<div class="input-group-text">
-												<span class="fas fa-user"></span>
+												<span class="fas fa-balance-scale"></span>
 											</div>
 										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<div class="form-group">
+										<label>Supplier</label>
+										<select 
+										class="form-control select2" 
+										style="width: 100%;" 
+										formControlName="supplier"
+										name="supplier"
+										id="supplier"
+										>
+											<option value="0" selected="selected">Select</option>
+											<option value="1">The Fat Butcher</option>
+											<option value="2">Sensor Merchant</option>
+											<option value="3">Restaurent Veg Supply</option>
+											<option value="4">Deli Frost</option>
+										</select>
 									</div>
 								</div>
 							</div>
@@ -282,11 +323,11 @@
 					</div>
 
 					<div class="col-md-4 col-sm-6 col-xs-6">
-
+						<img src="assets/img/food_default.png" alt="..." class="img-thumbnail">
 					</div>
+
 				</div>
-			</div>
-			<div class="modal-footer">
+
 				<div class="row">
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<button type="button" class="btn btn-secondary btn-block"  data-dismiss="modal">Close</button>
@@ -295,7 +336,8 @@
 						<button type="submit" class="btn btn-success btn-block">Save Product</button>
 					</div>
 				</div>
-				
+			</div>
+			<div class="">
 				
 			</div>
 

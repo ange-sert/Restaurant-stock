@@ -6,4 +6,5 @@ export class Products {
 	unit_price: any;
 	product_category: any;
 	quantity: any;
+	supplier: any;
 }

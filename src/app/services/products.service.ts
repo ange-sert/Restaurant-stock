@@ -25,7 +25,8 @@ export class ProductsService {
 			image: product.image,
 			unit_price: product.unit_price,
 			product_category: product.product_category,
-			quantity: product.quantity
+			quantity: product.quantity,
+      supplier: product.supplier
 		});
   }
 

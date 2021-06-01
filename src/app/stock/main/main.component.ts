@@ -33,6 +33,7 @@ export class MainComponent implements OnInit {
       unit_price:[''],
       product_category:[''],
       quantity: [''],
+      supplier: [''],
     })
   }
 
@@ -77,6 +78,9 @@ export class MainComponent implements OnInit {
   }
   get quantity(){
     return this.productForm.get('quantity')
+  }
+  get supplier(){
+    return this.productForm.get('supplier')
   }
 
 
