@@ -1,0 +1,366 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+	<!-- Content Header (Page header) -->
+	<div class="content-header">
+		<div class="container-fluid">
+			<div class="row mb-2">
+				<div class="col-sm-6">
+					<h1 class="m-0 text-dark">Stock</h1>
+				</div><!-- /.col -->
+				<div class="col-sm-6">
+					<ol class="breadcrumb float-sm-right">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item active">Stock</li>
+					</ol>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container-fluid -->
+	</div>
+	<!-- /.content-header -->
+
+
+	<section class="content">
+		<div class="container-fluid">
+			<!-- Info boxes -->
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-3">
+					<div class="info-box">
+						<span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
+
+						<div class="info-box-content">
+							<span class="info-box-text">Stock</span>
+							<span class="info-box-number">
+								-
+							</span>
+						</div>
+						<!-- /.info-box-content -->
+					</div>
+					<!-- /.info-box -->
+				</div>
+				<!-- /.col -->
+				<div class="col-12 col-sm-6 col-md-3">
+					<div class="info-box mb-3">
+						<span class="info-box-icon bg-danger elevation-1"><i class="fas fa-thumbs-up"></i></span>
+
+						<div class="info-box-content">
+							<span class="info-box-text">Recipes</span>
+							<span class="info-box-number">-</span>
+						</div>
+						<!-- /.info-box-content -->
+					</div>
+					<!-- /.info-box -->
+				</div>
+				<!-- /.col -->
+
+				<!-- fix for small devices only -->
+				<div class="clearfix hidden-md-up"></div>
+
+				<div class="col-12 col-sm-6 col-md-3">
+					<div class="info-box mb-3">
+						<span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
+
+						<div class="info-box-content">
+							<span class="info-box-text">Sales</span>
+							<span class="info-box-number">-</span>
+						</div>
+						<!-- /.info-box-content -->
+					</div>
+					<!-- /.info-box -->
+				</div>
+				<!-- /.col -->
+				<div class="col-12 col-sm-6 col-md-3">
+					<div class="info-box mb-3">
+						<span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
+
+						<div class="info-box-content">
+							<span class="info-box-text">Suppliers</span>
+							<span class="info-box-number">-</span>
+						</div>
+						<!-- /.info-box-content -->
+					</div>
+					<!-- /.info-box -->
+				</div>
+				<!-- /.col -->
+			</div>
+			<!-- /.row -->
+
+
+
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="card">
+						<div class="card-header">
+							<h3 class="card-title">Stock List</h3>
+						</div>
+						<!-- /.card-header -->
+						<div class="card-body">
+
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-xs-6"></div>
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<button type="button" class="btn btn-success btn-block btn-flat"  data-toggle="modal" data-target="#exampleModal">Create New Stock Item</button>
+								</div>
+							</div>
+
+							<br>
+
+							<table id="example1" class="table table-bordered table-striped">
+								<thead>
+									<tr>
+										<th>Product Name</th>
+										<th>Supplier</th>
+										<th>Group</th>
+										<th>UOM</th>
+										<th>Price (N)</th>
+										<th>Stock</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr *ngFor="let product of products">
+										<td>{{product.name}}</td>
+										<td>
+											<span *ngIf="product.supplier== 1">The Fat Butcher</span>
+											<span *ngIf="product.supplier== 2">Sensor Merchant</span>
+											<span *ngIf="product.supplier== 3">Restaurent Veg Supply</span>
+											<span *ngIf="product.supplier== 4">Deli Frost</span>
+										</td>
+										<td>
+											<span *ngIf="product.product_category== 1">Bakery</span>
+											<span *ngIf="product.product_category== 2">Beverage</span>
+											<span *ngIf="product.product_category== 3">Cleaning Material</span>
+											<span *ngIf="product.product_category== 4">Cold Meat</span>
+											<span *ngIf="product.product_category== 5">Dairy</span>
+											<span *ngIf="product.product_category== 6">Dry Store</span>
+											<span *ngIf="product.product_category== 7">Fish</span>
+											<span *ngIf="product.product_category== 8">Fruit And Vegetables</span>
+											<span *ngIf="product.product_category== 9">Herbs & Spices</span>
+											<span *ngIf="product.product_category== 10">Meat</span>
+											<span *ngIf="product.product_category== 11">Pork</span>
+										</td>
+										<td>
+											<span *ngIf="product.uom == 1">KG</span>
+											<span *ngIf="product.uom == 2">Litres</span>
+										</td>
+										<td>{{product.unit_price}}</td>
+										<td>{{product.quantity}}</td>
+										<td>
+											<button type="button" class="btn btn-block btn-info btn-xs">View</button>
+										</td>
+									</tr>
+
+								</tbody>
+								<tfoot>
+									<tr>
+										<th>Product Name</th>
+										<th>Supplier</th>
+										<th>Group</th>
+										<th>UOM</th>
+										<th>Price (N)</th>
+										<th>Stock</th>
+										<th></th>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+						<!-- /.card-body -->
+					</div>
+					<!-- /.card -->
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+
+			<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Create New Stock Item</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-8 col-sm-12 col-xs-12">
+						
+
+							<div class="row">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<div class="form-group">
+										<label>Product Category</label>
+										<select 
+										class="form-control select5" 
+										style="width: 100%;" 
+										formControlName="product_category"
+										name="product_category"
+										id="product_category"
+										>
+											<option value="0" selected="selected">Select</option>
+											<option value="1">Bakery</option>
+											<option value="2">Beverage</option>
+											<option value="3">Cleaning Material</option>
+											<option value="4">Cold Meat</option>
+											<option value="5">Dairy</option>
+											<option value="6">Dry Store</option>
+											<option value="7">Fish</option>
+											<option value="8">Fruit And Vegetables</option>
+											<option value="9">Herbs & Spices</option>
+											<option value="10">Meat</option>
+											<option value="11">Pork</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<label>Product Name</label>
+									<div class="input-group mb-3">
+										<input 
+										type="text" 
+										class="form-control" 
+										placeholder="Product name"
+										formControlName="name"
+										name="name"
+										id="name"
+										>
+										<div class="input-group-append">
+											<div class="input-group-text">
+												<span class="fas fa-mitten"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<label>Product Unit Price</label>
+									<div class="input-group mb-3">
+										<input
+											type="text" 
+										class="form-control" 
+										placeholder="Product Unit Price"
+										formControlName="unit_price"
+										name="unit_price"
+										id="unit_price"
+										>
+										<div class="input-group-append">
+											<div class="input-group-text">
+												<span class="fas fa-dollar-sign"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<div class="form-group">
+										<label>Unit Of Measurement</label>
+										<select 
+										class="form-control select3" 
+										style="width: 100%;" 
+										formControlName="uom"
+										name="uom"
+										id="uom"
+										>
+											<option value="0" selected="selected">Select</option>
+											<option value="1">KG</option>
+											<option value="2">Litres</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-6">
+									<label>Stock Quantity</label>
+									<div class="input-group mb-3">
+										<input 
+										type="text" 
+										class="form-control" 
+										placeholder="Stock Quantity"
+										formControlName="quantity"
+										name="quantity"
+										id="quantity"
+										>
+										<div class="input-group-append">
+											<div class="input-group-text">
+												<span class="fas fa-balance-scale"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<div class="form-group">
+										<label>Supplier</label>
+										<select 
+										class="form-control select4" 
+										style="width: 100%;" 
+										formControlName="supplier"
+										name="supplier"
+										id="supplier"
+										>
+											<option value="0" selected="selected">Select</option>
+											<option value="1">The Fat Butcher</option>
+											<option value="2">Sensor Merchant</option>
+											<option value="3">Restaurent Veg Supply</option>
+											<option value="4">Deli Frost</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<div class="form-group">
+										<label>Product Description</label>
+										<textarea 
+										class="form-control" 
+										rows="3" 
+										placeholder="Product description here"
+										formControlName="description"
+										name="description"
+										id="description"
+										></textarea>
+									</div>
+								</div>
+							</div>
+
+
+
+						
+					</div>
+
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<img src="assets/img/food_default.png" alt="..." class="img-thumbnail">
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<button type="button" class="btn btn-secondary btn-block"  data-dismiss="modal">Close</button>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<button type="submit" class="btn btn-success btn-block">Save Product</button>
+					</div>
+				</div>
+			</div>
+			<div class="">
+				
+			</div>
+
+			</form>
+		</div>
+	</div>
+</div>

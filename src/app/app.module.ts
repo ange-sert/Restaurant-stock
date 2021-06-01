@@ -1,5 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+
+//firestore
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
@@ -7,14 +13,28 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BeefStew1PiecwListComponent } from './beef-stew1-piecw-list/beef-stew1-piecw-list.component';
+import { MainComponent } from './stock/main/main.component';
+import { RecipeMainComponent } from './recipe/recipe-main/recipe-main.component';
+import { RecipeDishComponent } from './recipe/recipe-dish/recipe-dish.component';
+import { SuppliersMainComponent } from './suppliers/suppliers-main/suppliers-main.component';
 
 @NgModule({
-  declarations: [AppComponent, BeefStew1PiecwListComponent],
+  declarations: [
+  AppComponent, 
+  BeefStew1PiecwListComponent, 
+  MainComponent,  
+  RecipeMainComponent, RecipeDishComponent, SuppliersMainComponent
+  ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule,
+  BrowserModule,
+  BrowserAnimationsModule, // required animations module
+  ToastrModule.forRoot(), // ToastrModule added
+  ReactiveFormsModule,
+  FormsModule,
+  AppRoutingModule,
+  AngularFireModule.initializeApp(environment.firebaseConfig),
+  AngularFireDatabaseModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

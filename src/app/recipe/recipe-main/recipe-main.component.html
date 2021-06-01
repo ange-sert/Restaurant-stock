@@ -1,0 +1,212 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+	<!-- Content Header (Page header) -->
+	<div class="content-header">
+		<div class="container-fluid">
+			<div class="row mb-2">
+				<div class="col-sm-6">
+					<h1 class="m-0 text-dark">Recipes</h1>
+				</div><!-- /.col -->
+				<div class="col-sm-6">
+					<ol class="breadcrumb float-sm-right">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item active">Recipes</li>
+					</ol>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container-fluid -->
+	</div>
+
+
+	<section class="content">
+		<div class="container-fluid">
+			
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="card card-primary card-outline">
+						<div class="card-header">
+							<h3 class="card-title">Recipes</h3>
+						</div>
+
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-xs-6"></div>
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<button type="button" class="btn btn-success btn-block btn-flat"  data-toggle="modal" data-target="#exampleModal">Create New Recipe</button>
+								</div>
+							</div>
+
+							<ul class="nav nav-pills">
+								<li class="nav-item"><a class="nav-link active" href="#vegi" data-toggle="tab">Vegetarian</a></li>
+								<li class="nav-item"><a class="nav-link" href="#pasca" data-toggle="tab">Pascatarian</a></li>
+								<li class="nav-item"><a class="nav-link" href="#red" data-toggle="tab">Red Meats</a></li>
+								<li class="nav-item"><a class="nav-link" href="#poultry" data-toggle="tab">Poultry</a></li>
+							</ul>
+
+							<div class="tab-content">
+								<div class="active tab-pane" id="vegi">
+									
+									<br>
+									<div class="row">
+										<div class="col-md-3 col-sm-6 col-xs-12" *ngFor="let recipe of recipes">
+											<!-- Profile Image -->
+											<div class="card card-primary card-outline">
+												<div class="card-body box-profile">
+													<div class="text-center">
+														<img class="profile-user-img img-fluid img-circle"
+														src="assets/img/food_default.png"
+														alt="User profile picture">
+													</div>
+
+													<h3 class="profile-username text-center">{{recipe.name}}</h3>
+
+													<p class="text-muted text-center">
+														<span *ngIf="recipe.recipe_category== 1">Red Meat</span>
+														<span *ngIf="recipe.recipe_category== 2">Poultry</span>
+													</p>
+
+													<ul class="list-group list-group-unbordered mb-3">
+														<li class="list-group-item">
+															<b>Ingredients</b> <a class="float-right">-</a>
+														</li>
+														<li class="list-group-item">
+															<b>Rating</b> <a class="float-right">
+																<i class="far fa-star"></i>
+																<i class="far fa-star"></i>
+																<i class="far fa-star"></i>
+																<i class="far fa-star"></i>
+																<i class="far fa-star"></i>
+															</a>
+														</li>
+													</ul>
+
+													<a [routerLink]="['/recipe-dish', recipe.id]" class="btn btn-primary btn-block"><b>View</b></a>
+												</div>
+												<!-- /.card-body -->
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+
+			<form [formGroup]="recipeForm" (ngSubmit)="onSubmit()">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Create New Recipe</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-8 col-sm-6 col-xs-6">
+
+
+							<div class="row">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<div class="form-group">
+										<label>Recipe Category</label>
+										<select 
+										class="form-control select2" 
+										style="width: 100%;" 
+										formControlName="recipe_category"
+										name="recipe_category"
+										id="recipe_category"
+										>
+										<option value="0" selected="selected">Select</option>
+										<option value="1">Red Meat</option>
+										<option value="2">Poultry</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<label>Product Name</label>
+								<div class="input-group mb-3">
+									<input 
+									type="text" 
+									class="form-control" 
+									placeholder="Product name"
+									formControlName="name"
+									name="name"
+									id="name"
+									>
+									<div class="input-group-append">
+										<div class="input-group-text">
+											<span class="fas fa-mitten"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="form-group">
+									<label>Product Description</label>
+									<textarea 
+									class="form-control" 
+									rows="3" 
+									placeholder="Product description here"
+									formControlName="description"
+									name="description"
+									id="description"
+									></textarea>
+								</div>
+							</div>
+						</div>
+
+
+
+						
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<img src="assets/img/food_default.png" alt="..." class="img-thumbnail">
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<button type="button" class="btn btn-secondary btn-block"  data-dismiss="modal">Close</button>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<button type="submit" class="btn btn-success btn-block">Save Product</button>
+					</div>
+				</div>
+			</div>
+
+
+		</form>
+	</div>
+</div>
+</div>
+
+
+
