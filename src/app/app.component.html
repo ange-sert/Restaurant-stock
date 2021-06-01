@@ -37,10 +37,10 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <img src="assets/img/lawrence.png" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
-                  Brad Diesel
+                  Lawrence Gumbo
                   <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
                 </h3>
                 <p class="text-sm">Call me whenever you can...</p>
@@ -50,37 +50,9 @@
             <!-- Message End -->
           </a>
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  John Pierce
-                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">I got your message bro</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <!-- Message Start -->
-            <div class="media">
-              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-              <div class="media-body">
-                <h3 class="dropdown-item-title">
-                  Nora Silvester
-                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                </h3>
-                <p class="text-sm">The subject goes here</p>
-                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-              </div>
-            </div>
-            <!-- Message End -->
-          </a>
+
+
+
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
         </div>
@@ -100,12 +72,12 @@
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <i class="fas fa-dollar-sign mr-2"></i> 3 Price Changes
             <span class="float-right text-muted text-sm">12 hours</span>
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-            <i class="fas fa-file mr-2"></i> 3 new reports
+            <i class="fas fa-utensils mr-2"></i> 3 Recipe Ratings
             <span class="float-right text-muted text-sm">2 days</span>
           </a>
           <div class="dropdown-divider"></div>
@@ -126,7 +98,7 @@
     <a href="index3.html" class="brand-link">
       <img src="assets/img/wine_lab.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">Wine Lab</span>
+      <span class="brand-text font-weight-light">Treasure Makwanise</span>
     </a>
 
     <!-- Sidebar -->
@@ -137,27 +109,17 @@
           <img src="assets/img/lawrence.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Treasure Makwanise</a>
+          <a href="#" class="d-block">Admin</a>
         </div>
       </div>
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-          <li class="nav-item">
-            <a routerLink="dashboard" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Dashboard
-              </p>
-            </a>
-          </li>
        
           <li class="nav-item has-treeview menu-open">
             <a routerLink="main" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fas fa-store-alt"></i>
               <p>
                 Stock
                 <i class="right fas fa-angle-left"></i>
@@ -166,22 +128,34 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a routerLink="main" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Products</p>
+                  <i class="fas fa-chart-pie nav-icon"></i>
+                  <p>Ingredients</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a routerLink="recipe-main" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-concierge-bell nav-icon"></i>
                   <p>Recipes</p>
                 </a>
               </li>
+            </ul>
+          </li>
+
+          <li class="nav-item has-treeview">
+            <a routerLink="main" class="nav-link active">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Suppliers
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a routerLink="dashboard" class="nav-link">
+                <a routerLink="suppliers-main" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
+                  <p>All Suppliers</p>
                 </a>
               </li>
+
             </ul>
           </li>
 

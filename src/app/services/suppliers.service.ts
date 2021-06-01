@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { Recipes } from 'src/app/models/recipes.model';
+import { Suppliers } from 'src/app/models/suppliers.model';
 
 @Injectable({
   providedIn: 'root'
@@ -18,10 +18,10 @@ export class SuppliersService {
     return this.firestore.collection('suppliers').snapshotChanges();
   }
 
-  createSuppliers(suppliers: suppliers) {
-    return this.firestore.collection('Suppliers').add(Suppliers);
+  createSuppliers(suppliers: Suppliers) {
+    return this.firestore.collection('suppliers').add(suppliers);
     return this.firestore
-    .collection("Suppliers")
+    .collection("suppliers")
     .add({
       name: suppliers.name,
       description: suppliers.description,
@@ -30,8 +30,7 @@ export class SuppliersService {
       phone: suppliers.phone,
       email: suppliers.email,
       contact_person: suppliers.category,
-      category: suppliers.category,
-
+      category: suppliers.category
     });
   }
 }

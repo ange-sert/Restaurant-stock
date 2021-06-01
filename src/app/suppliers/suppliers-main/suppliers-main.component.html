@@ -1,1 +1,266 @@
-<p>suppliers-main works!</p>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+	<!-- Content Header (Page header) -->
+	<div class="content-header">
+		<div class="container-fluid">
+			<div class="row mb-2">
+				<div class="col-sm-6">
+					<h1 class="m-0 text-dark">Suppliers</h1>
+				</div><!-- /.col -->
+				<div class="col-sm-6">
+					<ol class="breadcrumb float-sm-right">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item active">Suppliers</li>
+					</ol>
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container-fluid -->
+	</div>
+
+
+	<section class="content">
+		<div class="container-fluid">
+			
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="card card-primary card-outline">
+						<div class="card-header">
+							<h3 class="card-title">Suppliers</h3>
+						</div>
+
+						<div class="card-body">
+
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-xs-6"></div>
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<button type="button" class="btn btn-success btn-block btn-flat"  data-toggle="modal" data-target="#exampleModal">Create New Supplier</button>
+								</div>
+							</div>
+
+							<br>
+							<br>
+							
+							<div class="row">
+								<div class="col-md-8 col-sm-12 col-xs-12">
+									<ul class="products-list product-list-in-card pl-2 pr-2">
+										<li class="item" *ngFor="let suppliers of suppliers">
+											<div class="product-img">
+												<img src="assets/img/suppliers.jpg" alt="Suppliers Image" class="img-size-50">
+											</div>
+											<div class="product-info">
+												<a href="javascript:void(0)" class="product-title">
+													{{suppliers.name}}
+													<span class="float-right">
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</span></a>
+													<span class="product-description">
+														<i class="fas fa-mobile-alt"></i> {{suppliers.phone}} | 
+														<i class="far fa-envelope"></i> {{suppliers.email}}
+													</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+
+
+									<div class="col-md-4 col-sm-12 col-xs-12"></div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+
+	</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+
+			<form [formGroup]="suppliersForm" (ngSubmit)="onSubmit()">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Create New Recipe</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-8 col-sm-6 col-xs-6">
+
+
+							<div class="row">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<div class="form-group">
+										<label>Supplier Category</label>
+										<select 
+										class="form-control select2" 
+										style="width: 100%;" 
+										formControlName="category"
+										name="category"
+										id="category"
+										>
+										<option value="0" selected="selected">Select</option>
+										<option value="1">Meat Seller</option>
+										<option value="2">Veggies</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<label>Supplier Name</label>
+								<div class="input-group mb-3">
+									<input 
+									type="text" 
+									class="form-control" 
+									placeholder="Supplier Name"
+									formControlName="name"
+									name="name"
+									id="name"
+									>
+									<div class="input-group-append">
+										<div class="input-group-text">
+											<span class="fas fa-mitten"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<label>Phone Number</label>
+								<div class="input-group mb-3">
+									<input 
+									type="text" 
+									class="form-control" 
+									placeholder="Supplier Phone"
+									formControlName="phone"
+									name="phone"
+									id="phone"
+									>
+									<div class="input-group-append">
+										<div class="input-group-text">
+											<span class="fas fa-mitten"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<label>Email Address</label>
+								<div class="input-group mb-3">
+									<input 
+									type="text" 
+									class="form-control" 
+									placeholder="Supplier Email"
+									formControlName="email"
+									name="email"
+									id="email"
+									>
+									<div class="input-group-append">
+										<div class="input-group-text">
+											<span class="fas fa-mitten"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<label>Supplier Address</label>
+								<div class="input-group mb-3">
+									<input 
+									type="text" 
+									class="form-control" 
+									placeholder="Supplier Address"
+									formControlName="address"
+									name="address"
+									id="address"
+									>
+									<div class="input-group-append">
+										<div class="input-group-text">
+											<span class="fas fa-mitten"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<label>Contact Person</label>
+								<div class="input-group mb-3">
+									<input 
+									type="text" 
+									class="form-control" 
+									placeholder="Supplier Address"
+									formControlName="contact_person"
+									name="contact_person"
+									id="contact_person"
+									>
+									<div class="input-group-append">
+										<div class="input-group-text">
+											<span class="fas fa-mitten"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="form-group">
+									<label>Product Description</label>
+									<textarea 
+									class="form-control" 
+									rows="3" 
+									placeholder="Product description here"
+									formControlName="description"
+									name="description"
+									id="description"
+									></textarea>
+								</div>
+							</div>
+						</div>
+
+
+
+						
+					</div>
+
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<img src="assets/img/food_default.png" alt="..." class="img-thumbnail">
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<button type="button" class="btn btn-secondary btn-block"  data-dismiss="modal">Close</button>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6">
+						<button type="submit" class="btn btn-success btn-block">Save Product</button>
+					</div>
+				</div>
+			</div>
+
+
+		</form>
+	</div>
+</div>
+</div>
