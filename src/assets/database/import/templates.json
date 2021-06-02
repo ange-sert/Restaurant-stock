@@ -1,0 +1,560 @@
+"2" : {
+  "product_name" : "GOLDEN PHOENIX FRENCH FRIES",
+  "product_category" : "1",
+   "uom" : "1",
+    "price" : "1182.5  ",
+  "__collections__" : {}
+},
+"3" : {
+  "product_name" : "GOLDEN PHOENIX CHICKEN FRANKS",
+  "product_category" : "1",
+   "uom" : "1",
+    "price" : "1897.06 ",
+  "__collections__" : {}
+},
+"4" : {
+  "product_name" : "GOLDEN PHOENIX JUMBO SHRIMPS ",
+  "product_category" : "1",
+   "uom" : "1",
+    "price" : "13975 ",
+  "__collections__" : {}
+},
+"5" : {
+  "product_name" : "GOLDEN PHOENIX FISH FILLET ",
+  "product_category" : "1",
+   "uom" : "1",
+    "price" : "2107  ",
+  "__collections__" : {}
+},
+"6" : {
+  "product_name" : "GOLDEN PHOENIX FRENCH FRIES",
+  "product_category" : "1",
+   "uom" : "1",
+    "price" : "1290  ",
+  "__collections__" : {}
+},
+"7" : {
+  "product_name" : "SEARA CHICKEN FRANKS ",
+  "product_category" : "1",
+   "uom" : "1",
+    "price" : "1422.79 ",
+  "__collections__" : {}
+},
+"8" : {
+  "product_name" : "GOLDEN PHOENIX LARGE SHRIMPS ",
+  "product_category" : "1",
+   "uom" : "1",
+    "price" : "12093.79  ",
+  "__collections__" : {}
+},
+"9" : {
+  "product_name" : "MCCAIN SEASONED WEDGES ",
+  "product_category" : "1",
+   "uom" : "1",
+    "price" : "2436.67 ",
+  "__collections__" : {}
+},
+"10 " : {
+  "product_name" : "MCCAIN ORIGINAL 9/9 FRENCH FRIES ",
+  "product_category" : "1",
+   "uom" : "1",
+    "price" : "1204  ",
+  "__collections__" : {}
+},
+"11 " : {
+  "product_name" : "MCCAIN ORIGINAL 6/6 FRENCH FRIES ",
+  "product_category" : "1",
+   "uom" : "1",
+    "price" : "1204  ",
+  "__collections__" : {}
+},
+"14 " : {
+  "product_name" : "MCCAIN MIXED VEGETABLES",
+  "product_category" : "2",
+   "uom" : "1",
+    "price" : "2580  ",
+  "__collections__" : {}
+},
+"15 " : {
+  "product_name" : "MCCAIN WINTER VEGETABLES ",
+  "product_category" : "2",
+   "uom" : "1",
+    "price" : "2902.5  ",
+  "__collections__" : {}
+},
+"16 " : {
+  "product_name" : "MITY FRESH GREEN PEAS",
+  "product_category" : "2",
+   "uom" : "1",
+    "price" : "1612.5  ",
+  "__collections__" : {}
+},
+"17 " : {
+  "product_name" : "MCCAIN PEAS",
+  "product_category" : "2",
+   "uom" : "1",
+    "price" : "2472.5  ",
+  "__collections__" : {}
+},
+"18 " : {
+  "product_name" : "MCCAIN CORN KERNELS",
+  "product_category" : "2",
+   "uom" : "1",
+    "price" : "2795  ",
+  "__collections__" : {}
+},
+"19 " : {
+  "product_name" : "MITY FRESH MIXEDVEGETABLE  ",
+  "product_category" : "2",
+   "uom" : "1",
+    "price" : "1612  ",
+  "__collections__" : {}
+},
+"22 " : {
+  "product_name" : "SYMPLI THICK CUT YAM CHIPS 200G",
+  "product_category" : "3",
+   "uom" : "1",
+    "price" : "161.25  ",
+  "__collections__" : {}
+},
+"23 " : {
+  "product_name" : "SYMPLI STRAIGHT CUT YAM FRIES 200G ",
+  "product_category" : "3",
+   "uom" : "1",
+    "price" : "161.25  ",
+  "__collections__" : {}
+},
+"24 " : {
+  "product_name" : "SYMPLI  RIPE PLANTAIN CHOPS",
+  "product_category" : "3",
+   "uom" : "1",
+    "price" : "2254.28 ",
+  "__collections__" : {}
+},
+"25 " : {
+  "product_name" : "SYMPLI THICK CUT YAM CHIPS 500G",
+  "product_category" : "3",
+   "uom" : "1",
+    "price" : "398.83  ",
+  "__collections__" : {}
+},
+"26 " : {
+  "product_name" : "SYMPLI STRAIGHT CUT YAM FRIES 500G ",
+  "product_category" : "3",
+   "uom" : "1",
+    "price" : "398.83  ",
+  "__collections__" : {}
+},
+"27 " : {
+  "product_name" : "SYMPLI THICK CUT YAM CHIPS 2.5KG ",
+  "product_category" : "3",
+   "uom" : "1",
+    "price" : "1806  ",
+  "__collections__" : {}
+},
+"28 " : {
+  "product_name" : "SYMPLI STRAIGHT CUT YAM  FRIES ",
+  "product_category" : "3",
+   "uom" : "1",
+    "price" : "1806  ",
+  "__collections__" : {}
+},
+"31 " : {
+  "product_name" : "OCEAN  FLOWER HEADLESS SMALL FLOWER  SHRIMPS 400G",
+  "product_category" : "4",
+   "uom" : "2",
+    "price" : "2300  ",
+  "__collections__" : {}
+},
+"32 " : {
+  "product_name" : "OCEAN  FLOWER AFRICAN MIX FISH 1KG ",
+  "product_category" : "4",
+   "uom" : "3",
+    "price" : "1586  ",
+  "__collections__" : {}
+},
+"33 " : {
+  "product_name" : "OCEAN FLOWER CRAB  WHOLE 1 KG",
+  "product_category" : "4",
+   "uom" : "3",
+    "price" : "3050  ",
+  "__collections__" : {}
+},
+"34 " : {
+  "product_name" : "OCEAN FLOWER CRAB CLUSTER 1KG",
+  "product_category" : "4",
+   "uom" : "2",
+    "price" : "2440  ",
+  "__collections__" : {}
+},
+"35 " : {
+  "product_name" : "OCEAN FLOWER PUD SMALL SHRIMPS 400G",
+  "product_category" : "4",
+   "uom" : "2",
+    "price" : "3100  ",
+  "__collections__" : {}
+},
+"36 " : {
+  "product_name" : "OCEAN FLOWER TILAPIA FISH 1.2KG",
+  "product_category" : "4",
+   "uom" : "2",
+    "price" : "2488.75 ",
+  "__collections__" : {}
+},
+"37 " : {
+  "product_name" : "OCEAN FLOWER SEAFOOD MIX 400G",
+  "product_category" : "4",
+   "uom" : "2",
+    "price" : "2800  ",
+  "__collections__" : {}
+},
+"38 " : {
+  "product_name" : "OCEAN FLOWER PUD MEDIUM SHRIMPS 400G ",
+  "product_category" : "4",
+   "uom" : "2",
+    "price" : "4000  ",
+  "__collections__" : {}
+},
+"39 " : {
+  "product_name" : "OCEAN FLOWER SOLE PAN READY 1KG",
+  "product_category" : "4",
+   "uom" : "2",
+    "price" : "2775.5  ",
+  "__collections__" : {}
+},
+"40 " : {
+  "product_name" : "OCEAN FLOWER OCTOPUS FLOWER GUTTED  1KG",
+  "product_category" : "4",
+   "uom" : "2",
+    "price" : "2775.5  ",
+  "__collections__" : {}
+},
+"43 " : {
+  "product_name" : "PREDENT BUTTE UNSALTED 8G  ",
+  "product_category" : "5",
+   "uom" : "2",
+    "price" : "80.63 ",
+  "__collections__" : {}
+},
+"44 " : {
+  "product_name" : "PRESIDENT BUTTER  SALTED 200G",
+  "product_category" : "5",
+   "uom" : "2",
+    "price" : "1554  ",
+  "__collections__" : {}
+},
+"45 " : {
+  "product_name" : "PRESIDENT BUTTER  UNSALTED 200G",
+  "product_category" : "5",
+   "uom" : "2",
+    "price" : "1554  ",
+  "__collections__" : {}
+},
+"46 " : {
+  "product_name" : "BRIDEL UNSALTED BUTTER 200G",
+  "product_category" : "5",
+   "uom" : "2",
+    "price" : "1129  ",
+  "__collections__" : {}
+},
+"47 " : {
+  "product_name" : "AMBASSADOR BUTTER UNSALTED 200G",
+  "product_category" : "5",
+   "uom" : "2",
+    "price" : "740 ",
+  "__collections__" : {}
+},
+"48 " : {
+  "product_name" : "AMBASSADOR BUTTER SALTED200G ",
+  "product_category" : "5",
+   "uom" : "2",
+    "price" : "740 ",
+  "__collections__" : {}
+},
+"49 " : {
+  "product_name" : "MERCI CHEF UNSALTED BUTTER 200G",
+  "product_category" : "5",
+   "uom" : "2",
+    "price" : "1129  ",
+  "__collections__" : {}
+},
+"52 " : {
+  "product_name" : "PRESIDENT COOKING CREAM 1L ",
+  "product_category" : "6",
+   "uom" : "2",
+    "price" : "3430  ",
+  "__collections__" : {}
+},
+"53 " : {
+  "product_name" : "PRESIDENT SPRAY CREAM 250G ",
+  "product_category" : "6",
+   "uom" : "2",
+    "price" : "2490  ",
+  "__collections__" : {}
+},
+"54 " : {
+  "product_name" : "PRESIDENT WHIPPING CREAM 200ML ",
+  "product_category" : "6",
+   "uom" : "2",
+    "price" : "2150  ",
+  "__collections__" : {}
+},
+"55 " : {
+  "product_name" : "PRESIDENT WHIPPING CREAM 1L",
+  "product_category" : "6",
+   "uom" : "2",
+    "price" : "4730  ",
+  "__collections__" : {}
+},
+"56 " : {
+  "product_name" : "ANICA COOKING CREAM 1L ",
+  "product_category" : "6",
+   "uom" : "2",
+    "price" : "2239.58 ",
+  "__collections__" : {}
+},
+"57 " : {
+  "product_name" : "RICH'S BETTERCREME 2KG CCHOCOLATE",
+  "product_category" : "6",
+   "uom" : "2",
+    "price" : "8062.5  ",
+  "__collections__" : {}
+},
+"58 " : {
+  "product_name" : "DANICA WHIPPING CREAM CREAM",
+  "product_category" : "6",
+   "uom" : "2",
+    "price" : "2150  ",
+  "__collections__" : {}
+},
+"59 " : {
+  "product_name" : "RICH'S BETTERCREME 2KG STRAWBERRY",
+  "product_category" : "6",
+   "uom" : "2",
+    "price" : "7062.75 ",
+  "__collections__" : {}
+},
+"60 " : {
+  "product_name" : "RICH'S BETTERCREME 2KG VANILLA ",
+  "product_category" : "6",
+   "uom" : "2",
+    "price" : "7062.75 ",
+  "__collections__" : {}
+},
+"65 " : {
+  "product_name" : "PRESIDENT CHEESE CAMEMBERT 125G",
+  "product_category" : "7",
+   "uom" : "2",
+    "price" : "2399  ",
+  "__collections__" : {}
+},
+"66 " : {
+  "product_name" : "PRESIDENT CHEESE BRIE 125G ",
+  "product_category" : "7",
+   "uom" : "2",
+    "price" : "2399  ",
+  "__collections__" : {}
+},
+"67 " : {
+  "product_name" : "PRESIDENT PROCESSED CHEESE 120G",
+  "product_category" : "7",
+   "uom" : "2",
+    "price" : "554 ",
+  "__collections__" : {}
+},
+"68 " : {
+  "product_name" : "PRESIDENT GOATS CHEESE 113G",
+  "product_category" : "7",
+   "uom" : "2",
+    "price" : "2580  ",
+  "__collections__" : {}
+},
+"69 " : {
+  "product_name" : "SOSCIETE DOP ROQUEFORT RAW SHEEP'S MILK SLICE 100G ",
+  "product_category" : "7",
+   "uom" : "2",
+    "price" : "4730  ",
+  "__collections__" : {}
+},
+"70 " : {
+  "product_name" : "GALBAN GRAND GUOSTO PARMESAN 1KG ",
+  "product_category" : "7",
+   "uom" : "2",
+    "price" : "12255 ",
+  "__collections__" : {}
+},
+"71 " : {
+  "product_name" : "PRESIDENT CREAM CHEESE 1KG ",
+  "product_category" : "7",
+   "uom" : "2",
+    "price" : "6988  ",
+  "__collections__" : {}
+},
+"72 " : {
+  "product_name" : "PRESIDENT CHEESE LOAF GOUDA 3KG  ",
+  "product_category" : "7",
+   "uom" : "2",
+    "price" : "6988  ",
+  "__collections__" : {}
+},
+"73 " : {
+  "product_name" : "PRESIDENT CHEESE EDAM 3KG",
+  "product_category" : "7",
+   "uom" : "2",
+    "price" : "6988  ",
+  "__collections__" : {}
+},
+"74 " : {
+  "product_name" : "PRESIDENT EMMENTAL BLOCK CHEESE 3.7KG",
+  "product_category" : "7",
+   "uom" : "2",
+    "price" : "7686  ",
+  "__collections__" : {}
+},
+"75 " : {
+  "product_name" : "MOZZARELLA MAESTRELLA DICED CHEESE 2.5KG ",
+  "product_category" : "7",
+   "uom" : "2",
+    "price" : "3762.5  ",
+  "__collections__" : {}
+},
+"76 " : {
+  "product_name" : "MOZZARELLA MAESTRELL SHREDDED CHEESE 2 ",
+  "product_category" : "7",
+   "uom" : "2",
+    "price" : "3762.5  ",
+  "__collections__" : {}
+},
+"77 " : {
+  "product_name" : "MAESTRELLA FROZEN MOZZARELLA BLOCK 10KG",
+  "product_category" : "7",
+   "uom" : "2",
+    "price" : "3762.5  ",
+  "__collections__" : {}
+},
+"81 " : {
+  "product_name" : "MONDELEZ 480ML TUB-ORE OR CARAMELLO",
+  "product_category" : "8",
+   "uom" : "2",
+    "price" : "6718.75 ",
+  "__collections__" : {}
+},
+"82 " : {
+  "product_name" : "COUNTRY FRESH 5LTR-VANILLA OR NEAPOLITAN ",
+  "product_category" : "8",
+   "uom" : "2",
+    "price" : "1204  ",
+  "__collections__" : {}
+},
+"85 " : {
+  "product_name" : "WHITE BAGUETTE 225G",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "666.5 ",
+  "__collections__" : {}
+},
+"86 " : {
+  "product_name" : "MULTICEREAL LOAF 440G",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "2015.63 ",
+  "__collections__" : {}
+},
+"87 " : {
+  "product_name" : "MULTICEREAL BAGUETTE 250G",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "1268.5  ",
+  "__collections__" : {}
+},
+"88 " : {
+  "product_name" : "NUT ALMOND AND CEREAL LOAF 365G",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "1881.25 ",
+  "__collections__" : {}
+},
+"89 " : {
+  "product_name" : "MAX CROISSANT 90G",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "473 ",
+  "__collections__" : {}
+},
+"90 " : {
+  "product_name" : "MAX PAIN AU CHOCOLATE 120G ",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "827.75  ",
+  "__collections__" : {}
+},
+"91 " : {
+  "product_name" : "MULTI CEREAL CROISSANT 80G ",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "634.25  ",
+  "__collections__" : {}
+},
+"92 " : {
+  "product_name" : "RAISIN WHIRL 96G ",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "612.75  ",
+  "__collections__" : {}
+},
+"93 " : {
+  "product_name" : "MINI CROISSANT 25G ",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "155 ",
+  "__collections__" : {}
+},
+"94 " : {
+  "product_name" : "MINI PAIN AU CHOCOLATE 25G ",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "198.88  ",
+  "__collections__" : {}
+},
+"95 " : {
+  "product_name" : "MINI RAISIN WHIRL  30G ",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "241.88  ",
+  "__collections__" : {}
+},
+"96 " : {
+  "product_name" : "TILAMISU LAYER CAKE 610G ",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "13303.13  ",
+  "__collections__" : {}
+},
+"97 " : {
+  "product_name" : "MUFFIN CHOCO CHIP 95G",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "1612.5  ",
+  "__collections__" : {}
+},
+"98 " : {
+  "product_name" : "TULIP SLICED PEPPERONI  1KG      ",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "6988  ",
+  "__collections__" : {}
+},
+"99 " : {
+  "product_name" : "MUFFIN PLAIN 95G ",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "1612.5  ",
+  "__collections__" : {}
+},
+"100" : {
+  "product_name" : "TULIP SLICED STREAKY BACON 150G",
+  "product_category" : "9",
+   "uom" : "2",
+    "price" : "1505  ",
+  "__collections__" : {}
+},

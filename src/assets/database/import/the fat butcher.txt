@@ -1,0 +1,70 @@
+start	1	product_name	FILLET AAA- GRADE WHOLE (PREMIUM SA)	product_category	quantity	1.6KG	uom	unit_price	price	13700	end
+start	2	product_name	FILLET AAA- PORTIONS (PREMIUM SA)	product_category	quantity	250-300G	uom	unit_price	price	14200	end
+start	3	product_name	WING RIB OR SIRLOIN ON THE BONE (PREMIUM SA)	product_category	quantity	500G	uom	unit_price	price	11300	end
+start	4	product_name	SIRLOIN A-GRADE (PREMIUM  SA)	product_category	quantity	300-330G	uom	unit_price	price	11200	end
+start	5	product_name	RIB-EYE AAA GRADE PORTIONS (PREMIUM SA)	product_category	quantity	300-350G	uom	unit_price	price	14000	end
+start	6	product_name	HAMBURGER PATTIES (PREMIUM SA)	product_category	quantity	600G	uom	unit_price	price	9500	end
+start	7	product_name	T-BONE AAA-GRADE (PREMIUM SA)	product_category	quantity	400-450G	uom	unit_price	price	11500	end
+start	8	product_name	RUMP GRADE A (PREMIUM SA)	product_category	quantity	400-450G	uom	unit_price	price	11200	end
+start	9	product_name	TOMAHAWK (PREMIUM SA)	product_category	quantity	800G	uom	unit_price	price	12500	end
+start	10	product_name	RUMP CAP(PICANHA)A-GRADE(PREMIUM SA)	product_category	quantity	1.2-1.5KG	uom	unit_price	price	11800	end
+start	11	product_name	PRE COOKED MARINATED RIBS(PREMIUM SA)	product_category	quantity	1KG	uom	unit_price	price	11300	end
+start	12	product_name	SHORT RIBS RASHERS(PREMIUM SA)	product_category	quantity	1KG	uom	unit_price	price	9500	end
+start	13	product_name	RIBEYE ON THE BONE	product_category	quantity	600G	uom	unit_price	price	13000	end
+start	14	product_name	OXTAIL (PREMIUM SA)	product_category	quantity	1KG	uom	unit_price	price	10000	end
+start	15	product_name	BILTONG (PREMIUM)	product_category	quantity	1KG	uom	unit_price	price	15500	end
+start	16	product_name	TOPSIDE GROUND BEEF(MINCE PREMIUM SA) 	product_category	quantity	1KG	uom	unit_price	price	9500	end
+start	17	product_name	BEEF DRYWORS/DROEWORS (PREMIUM SA)	product_category	quantity	500G	uom	unit_price	price	13450	end
+start	18	product_name	BEEF CHILLI BITES (PREMIUM SA)	product_category	quantity	500G	uom	unit_price	price	14200	end
+start	19	product_name	PREMIUM BEEF BURGER PATTIES AAA-GRADE(PREMIUM SA)	product_category	quantity	1KG	uom	unit_price	price	12000	end
+start	20	product_name	BRISKET WHOLE DEBONED AAA-GRADE(PREMIUM SA)	product_category	quantity	1KG	uom	unit_price	price	11500	end
+start	21	product_name	OX LIVER STEAK(PREMIUM SA)	product_category	quantity	1KG	uom	unit_price	price	7500	end
+start	22	product_name	BOERWORS(NATIONAL)WITH LAMB FAT	product_category	quantity	1KG	uom	unit_price	price	5200	end
+start	23	product_name	BOERWORS(NATIONAL )WITH FATTY PORK(NECK,SHOULDER,BELLY	product_category	quantity	1KG	uom	unit_price	price	4800	end
+start	24	product_name	SLIDERS BURGER PATTIES	product_category	quantity	1KG	uom	unit_price	price	4600	end
+start	25	product_name	TRADITIONAL HAM BURGER PATTIES(NATIONAL)	product_category	quantity	1KG	uom	unit_price	price	5200	end
+start	26	product_name	OSSO BUCO SOFT SHIN(NATIONAL)	product_category	quantity	1.5-2KG	uom	unit_price	price	3500	end
+start	27	product_name	BEEF RIBS NON MARINATED( NATIONAL)	product_category	quantity	2KG	uom	unit_price	price	3500	end
+start	28	product_name	TOP SIDE WHOLE (WET AGE)	product_category	quantity	1KG	uom	unit_price	price	3100	end
+start	29	product_name	TOPSIDE GROUND BEEF(NATIONAL WET AGE)	product_category	quantity	1KG	uom	unit_price	price	3400	end
+start	30	product_name	FILLET (NATIONAL)	product_category	quantity	1KG	uom	unit_price	price	5400	end
+start	31	product_name	RIB EYE(NATIONAL)	product_category	quantity	1KG	uom	unit_price	price	4700	end
+start	32	product_name	RUMP(NATIONAL)	product_category	quantity	1KG	uom	unit_price	price	4600	end
+start	33	product_name	T-BONE(NATIONAL	product_category	quantity	1KG	uom	unit_price	price	4800	end
+start	34	product_name	GROUNDED MEAT/MINCE LEAN(NATIONAL)	product_category	quantity	1KG	uom	unit_price	price	3500	end
+start	35	product_name	DOG BONES	product_category	quantity	2KG	uom	unit_price	price	FREE	end
+start	36	product_name	BEEF ROAST (NATIONAL)	product_category	quantity	1.5KG	uom	unit_price	price	3100	end
+start	39	product_name	LAMB LOIN CHOPS AAA-GRADE(PREMIUM SA)	product_category	quantity	1KG	uom	unit_price	price	14300	end
+start	40	product_name	LAMB SAUSAGES(NATIONAL)	product_category	quantity	500-600G	uom	unit_price	price	4500	end
+start	41	product_name	LAMB RACK WHOLE AAA-GRADE(PREMIUM SA)	product_category	quantity	1KG	uom	unit_price	price	14000	end
+start	42	product_name	LAMB,RIBLETRS PLAIN VAC PACK	product_category	quantity	1.5KG	uom	unit_price	price	10500	end
+start	43	product_name	LAMB RIBLETS GREEK SPICED(RASHERS)	product_category	quantity	600G	uom	unit_price	price	10500	end
+start	44	product_name	LAMB PRECOOK MARINATED RIBS(PREMIUM)	product_category	quantity	1KG	uom	unit_price	price	9700	end
+start	45	product_name	LAMB SHOULDER,WHOLEDEBONE(PREMIUM SA)	product_category	quantity	1.4KG	uom	unit_price	price	12000	end
+start	46	product_name	LAMB RIB WHOLE RWD	product_category	quantity	500-600G	uom	unit_price	price	9500	end
+start	47	product_name	MUTTON  SAUSAGES(HALAL PREMIUM SA)	product_category	quantity	1KG	uom	unit_price	price	10500	end
+start	48	product_name	LAMB LEG BONE A-GRADE(PREMIUM SA)	product_category	quantity	2.1-2.3KG	uom	unit_price	price	11800	end
+start	52	product_name	CHICKEN BONES FOR STOCK	product_category	quantity	1KG	uom	unit_price	price	750	end
+start	53	product_name	CHICKEN LIVER	product_category	quantity	1KG	uom	unit_price	price	750	end
+start	54	product_name	IQF PIECES	product_category	quantity	5KG	uom	unit_price	price	1750	end
+start	55	product_name	CHICKEN BREAST	product_category	quantity	1KG/2.5KG	uom	unit_price	price	2200	end
+start	56	product_name	WINGS	product_category	quantity	1KG/2.5KG	uom	unit_price	price	1900	end
+start	57	product_name	THIGHS	product_category	quantity	1KG	uom	unit_price	price	1800	end
+start	60	product_name	VEGAN TRADITINAL BURGER PATTIES(PREMIUM SA)	product_category	quantity	320G	uom	unit_price	price	2900	end
+start	61	product_name	VEGETARIAN NUGGETS CHICKENFLAVOUR(PREMIUM SA)	product_category	quantity	380G	uom	unit_price	price	2880	end
+start	64	product_name	CHICKEN BREAKFAST SAUSAGES	product_category	quantity	500G	uom	unit_price	price	5200	end
+start	67	product_name	STREAKY BACON(PACKED SIZE IKG) (PREMIUM SA)	product_category	quantity	1KG	uom	unit_price	price	8500	end
+start	68	product_name	PORK RIBS NON MARINATED(NATIONAL)	product_category	quantity	1KG	uom	unit_price	price	5600	end
+start	69	product_name	PORK RASHERS (NATIONAL)	product_category	quantity	1KG	uom	unit_price	price	4900	end
+start	70	product_name	PORK ROAST(NATIONAL DEBONED PORK LEG)	product_category	quantity	1.7KG	uom	unit_price	price	5200	end
+start	73	product_name	PORK LOIN CHOPS(PREMIUM SA)	product_category	quantity	1KG	uom	unit_price	price	5400	end
+start	74	product_name	PORK SHOULDER(NATIONAL)	product_category	quantity	1KG	uom	unit_price	price	4200	end
+start	75	product_name	GROUND PORK(MINCE)	product_category	quantity	1KG	uom	unit_price	price	3900	end
+start	76	product_name	SMOKED GAMMON(NATIONAL)	product_category	quantity	2.3KG	uom	unit_price	price	6500	end
+start	77	product_name	LEG CHOPS(NATIONAL)	product_category	quantity	KG	uom	unit_price	price	4800	end
+start	78	product_name	RIBS MARINATED PRECOOKED(PACKED SIZE 2 KG)PRERMIUM SA	product_category	quantity	2KG	uom	unit_price	price	11300	end
+start	79	product_name	COUNTRY HAM SLICED	product_category	quantity	300G	uom	unit_price	price	11400	end
+start	80	product_name	PORK SHANK AND TROTTER(NATIONAL)	product_category	quantity	1KG	uom	unit_price	price	3000	end
+start	81	product_name	PORK BELLY(NATIONAL)	product_category	quantity	1KG	uom	unit_price	price	5500	end
+start	84	product_name	OSTRICH FILLET (PREMIUM)	product_category	quantity	500G	uom	unit_price	price	13300	end
+start	85	product_name	OSTRICH SAUSAGE	product_category	quantity	500G	uom	unit_price	price	10300	end

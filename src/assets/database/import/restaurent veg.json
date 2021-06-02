@@ -1,0 +1,516 @@
+{
+  "__collections__": {
+    "suppliers": {
+      "restaurant_veg": {
+        "name": "Veg Restaurant",
+        "description": "Something",
+        "image": "default.png",
+        "address": "Something",
+        "phone": "123456",
+        "email": "something@gmail.com",
+        "contact_person": "Lawrence",
+        "category": "1",
+        "__collections__": {
+          "products": {
+            "1": {
+              "product_name": "Strawberry",
+              "product_category": "",
+              "quantity": "250g",
+              "uom": "",
+              "unit_price": "",
+              "price": "1500",
+              "__collections__": {}
+            },
+            "2": {
+              "product_name": "Kiwi",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "5000",
+              "__collections__": {}
+            },
+            "3": {
+              "product_name": "Pomegranate",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "4800",
+              "__collections__": {}
+            },
+            "4": {
+              "product_name": "Plums",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "2400",
+              "__collections__": {}
+            },
+            "5": {
+              "product_name": "Pectarine",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "5500",
+              "__collections__": {}
+            },
+            "6": {
+              "product_name": "Peaches",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "5500",
+              "__collections__": {}
+            },
+            "7": {
+              "product_name": "Seedles white grapes",
+              "product_category": "",
+              "quantity": "500g",
+              "uom": "",
+              "unit_price": "",
+              "price": "1700",
+              "__collections__": {}
+            },
+            "8": {
+              "product_name": "Seedless red grapes",
+              "product_category": "",
+              "quantity": "500g",
+              "uom": "",
+              "unit_price": "",
+              "price": "1300",
+              "__collections__": {}
+            },
+            "9": {
+              "product_name": "Navel orange",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "2450",
+              "__collections__": {}
+            },
+            "10": {
+              "product_name": "Grape fruit",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "2450",
+              "__collections__": {}
+            },
+            "11": {
+              "product_name": "Melon galia",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "4800",
+              "__collections__": {}
+            },
+            "12": {
+              "product_name": "Melon cantaloupe",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "4800",
+              "__collections__": {}
+            },
+            "13": {
+              "product_name": "Clementine",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "2450",
+              "__collections__": {}
+            },
+            "14": {
+              "product_name": "Lemon",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "2450",
+              "__collections__": {}
+            },
+            "15": {
+              "product_name": "Lime",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "6000",
+              "__collections__": {}
+            },
+            "16": {
+              "product_name": "Asparagus Green",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "9500",
+              "__collections__": {}
+            },
+            "17": {
+              "product_name": "Capiscum Red",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "4500",
+              "__collections__": {}
+            },
+            "18": {
+              "product_name": "Capiscum yellow",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "4500",
+              "__collections__": {}
+            },
+            "19": {
+              "product_name": "Capiscum orange",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "4500",
+              "__collections__": {}
+            },
+            "20": {
+              "product_name": "Capiscum green",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "4500",
+              "__collections__": {}
+            },
+            "21": {
+              "product_name": "Iceberg lettuce",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "4300",
+              "__collections__": {}
+            },
+            "22": {
+              "product_name": "Broccolli",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "5500",
+              "__collections__": {}
+            },
+            "23": {
+              "product_name": "Fresh mushroom",
+              "product_category": "",
+              "quantity": "250g",
+              "uom": "",
+              "unit_price": "",
+              "price": "1650",
+              "__collections__": {}
+            },
+            "24": {
+              "product_name": "Fresh mushroom, loose",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "5500",
+              "__collections__": {}
+            },
+            "25": {
+              "product_name": "Brown mushroom",
+              "product_category": "",
+              "quantity": "250g",
+              "uom": "",
+              "unit_price": "",
+              "price": "1800",
+              "__collections__": {}
+            },
+            "26": {
+              "product_name": "Cherry tomato",
+              "product_category": "",
+              "quantity": "250g",
+              "uom": "",
+              "unit_price": "",
+              "price": "1550",
+              "__collections__": {}
+            },
+            "27": {
+              "product_name": "Endives",
+              "product_category": "",
+              "quantity": "500g",
+              "uom": "",
+              "unit_price": "",
+              "price": "2600",
+              "__collections__": {}
+            },
+
+            "28": {
+              "product_name": "Celery sticks",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "4500",
+              "__collections__": {}
+            },
+            "29": {
+              "product_name": "Red cabbage",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "3900",
+              "__collections__": {}
+            },
+            "30": {
+              "product_name": "Cauliflower",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "5500",
+              "__collections__": {}
+            },
+            "31": {
+              "product_name": "Radish",
+              "product_category": "",
+              "quantity": "125g",
+              "uom": "",
+              "unit_price": "",
+              "price": "750",
+              "__collections__": {}
+            },
+            "32": {
+              "product_name": "Lettuce Romana",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "5600",
+              "__collections__": {}
+            },
+            "33": {
+              "product_name": "Passion fruit",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "9500",
+              "__collections__": {}
+            },
+            "34": {
+              "product_name": "Blue berry",
+              "product_category": "",
+              "quantity": "125g",
+              "uom": "",
+              "unit_price": "",
+              "price": "1600",
+              "__collections__": {}
+            },
+            "35": {
+              "product_name": "Blackberry",
+              "product_category": "",
+              "quantity": "125g",
+              "uom": "",
+              "unit_price": "",
+              "price": "2300",
+              "__collections__": {}
+            },
+            "36": {
+              "product_name": "Rasberry",
+              "product_category": "",
+              "quantity": "125g",
+              "uom": "",
+              "unit_price": "",
+              "price": "2300",
+              "__collections__": {}
+            },
+            "37": {
+              "product_name": "Red Currant",
+              "product_category": "",
+              "quantity": "125g",
+              "uom": "",
+              "unit_price": "",
+              "price": "1700",
+              "__collections__": {}
+            },
+            "38": {
+              "product_name": "Rocket prepack",
+              "product_category": "",
+              "quantity": "125g",
+              "uom": "",
+              "unit_price": "",
+              "price": "1400",
+              "__collections__": {}
+            },
+            "39": {
+              "product_name": "Cooked beetroot",
+              "product_category": "",
+              "quantity": "500g",
+              "uom": "",
+              "unit_price": "",
+              "price": "2400",
+              "__collections__": {}
+            },
+            "40": {
+              "product_name": "Baby corn",
+              "product_category": "",
+              "quantity": "125g",
+              "uom": "",
+              "unit_price": "",
+              "price": "1900",
+              "__collections__": {}
+            },
+            "41": {
+              "product_name": "Baby spinash",
+              "product_category": "",
+              "quantity": "125g",
+              "uom": "",
+              "unit_price": "",
+              "price": "1400",
+              "__collections__": {}
+            },
+            "42": {
+              "product_name": "Mix leaves prepack",
+              "product_category": "",
+              "quantity": "pcs",
+              "uom": "",
+              "unit_price": "",
+              "price": "1400",
+              "__collections__": {}
+            },
+            "43": {
+              "product_name": "Rosemary",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "12500",
+              "__collections__": {}
+            },
+            "44": {
+              "product_name": "Mint",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "12500",
+              "__collections__": {}
+            },
+            "45": {
+              "product_name": "Basil",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "12500",
+              "__collections__": {}
+            },
+            "46": {
+              "product_name": "Thyme",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "12500",
+              "__collections__": {}
+            },
+            "47": {
+              "product_name": "Sage",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "12500",
+              "__collections__": {}
+            },
+            "48": {
+              "product_name": "Taragon",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "12500",
+              "__collections__": {}
+            },
+            "49": {
+              "product_name": "Chives",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "12500",
+              "__collections__": {}
+            },
+            "50": {
+              "product_name": "Lettuce little Gem",
+              "product_category": "",
+              "quantity": "10x6 pcs",
+              "uom": "",
+              "unit_price": "",
+              "price": "2800",
+              "__collections__": {}
+            },
+            "51": {
+              "product_name": "Lettuce lollo rosso",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "6000",
+              "__collections__": {}
+            },
+            "52": {
+              "product_name": "Chines cabbage",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "4000",
+              "__collections__": {}
+            },
+            "53": {
+              "product_name": "Fennel",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "5000",
+              "__collections__": {}
+            },
+            "54": {
+              "product_name": "Leeks",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "5000",
+              "__collections__": {}
+            },
+            "55": {
+              "product_name": "Oregano",
+              "product_category": "",
+              "quantity": "kg",
+              "uom": "",
+              "unit_price": "",
+              "price": "16000",
+              "__collections__": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

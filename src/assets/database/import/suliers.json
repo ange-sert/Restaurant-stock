@@ -1,0 +1,212 @@
+{
+  "__collections__": {
+    "beefstew1piece": {
+      "4zUYnS0xXeoF7yvJqwVw": {
+        "quantity": 5,
+        "price": 0,
+        "content": "TomatoFresh",
+        "unit_price": 300,
+        "__collections__": {}
+      },
+      "IR5SRbIyCQffA2NawtiP": {
+        "unit_price": 300,
+        "content": "PepperHot\t",
+        "price": 0,
+        "quantity": 1,
+        "__collections__": {}
+      },
+      "VsjmcfQ30Og5YarDRSE5": {
+        "content": "TomatoTin\t",
+        "unit_price": 300,
+        "price": 0,
+        "quantity": 1,
+        "__collections__": {}
+      },
+      "cHYewtuyUfR0S7XZxSv7": {
+        "unit_price": 700,
+        "price": 0,
+        "content": "beeftopside",
+        "quantity": 3.2,
+        "__collections__": {}
+      },
+      "gdkpkdNSs5PFgpdh85ez": {
+        "price": 0,
+        "content": "Tatashe Fresh",
+        "unit_price": 300,
+        "quantity": 5,
+        "__collections__": {}
+      },
+      "iDeAEyLXNonGZYyBYZqk": {
+        "price": 0,
+        "quantity": 0.5,
+        "unit_price": 320,
+        "content": "Oil Vegetable 25 Litre\t",
+        "__collections__": {}
+      },
+      "uwk1lQlcnq109hXuv9Vp": {
+        "unit_price": 500,
+        "content": "Garlic Fresh\t",
+        "price": 0,
+        "quantity": 1,
+        "__collections__": {}
+      },
+      "zUtQwxUZLs6K0qTLiVJN": {
+        "unit_price": 250,
+        "quantity": 3,
+        "content": "Onion Fresh\t",
+        "price": 0,
+        "__collections__": {}
+      }
+    },
+    "category": {
+      "iUInvm0Hs8kRSY3rNorw": {
+        "category_Name": "food",
+        "Description": "the category of food",
+        "__collections__": {}
+      }
+    },
+    "product": {
+      "2mlnuXCcMgpvIQyLjVYe": {
+        "product_category": "1",
+        "uom": "1",
+        "name": "Bread",
+        "image": "",
+        "unit_price": "100",
+        "quantity": "200",
+        "description": "White bread",
+        "supplier": "2",
+        "__collections__": {}
+      },
+      "o6Wl75FZAQ2m18aHZKK3": {
+        "description": "adsa",
+        "product_category": "6",
+        "uom": "1",
+        "name": "hello world",
+        "quantity": "160",
+        "unit_price": "122223",
+        "supplier": "1",
+        "image": "",
+        "__collections__": {}
+      },
+      "wEvOjrYyOoi4PsQdWBGG": {
+        "unit_price": "21",
+        "name": "Polony",
+        "product_category": "4",
+        "quantity": "21",
+        "description": "wasasas ",
+        "supplier": "1",
+        "uom": "2",
+        "image": "",
+        "__collections__": {}
+      },
+      "yDIkVyRlgzMYlcvgmvky": {
+        "description": "beef mince",
+        "unit_price": "2000",
+        "supplier": "1",
+        "image": "",
+        "quantity": "100",
+        "name": "Mince",
+        "product_category": "10",
+        "uom": "1",
+        "__collections__": {}
+      }
+    },
+    "recipes": {
+      "ahTMc5YA28NDHm3Qr3VQ": {
+        "description": "lovey",
+        "recipe_category": "1",
+        "name": "Lovey Meat",
+        "image": "",
+        "__collections__": {}
+      },
+      "rS0w8V1WavLfBIwa9Hhb": {
+        "email": "lawrencegumbo@gmail.com",
+        "address": "KG 521 St, Kigali",
+        "contact_person": "Lawrence",
+        "description": "thisd sl[kldhjeedd",
+        "name": "Lawrence Gumbo",
+        "phone": "+250789378351",
+        "category": "",
+        "image": "",
+        "__collections__": {}
+      },
+      "spVckotSQWs0WKClZhCY": {
+        "description": "this is meat",
+        "recipe_category": "1",
+        "image": "",
+        "name": "Odu Meat",
+        "__collections__": {}
+      },
+      "xRtVpgpICeouB6d0KRFB": {
+        "image": "",
+        "description": "Something about the dish",
+        "name": "Ahona Malu",
+        "recipe_category": "",
+        "__collections__": {}
+      },
+      "xXD7mFTgH28NEXjqfIY8": {
+        "category_recipe": "food",
+        "image": "250",
+        "description": "the soup recipes ",
+        "Name": "soupe",
+        "product_id": "",
+        "__collections__": {}
+      },
+      "zvy1OPTlyiD9QYfnXWCA": {
+        "recipe_category": "1",
+        "description": "treasure steak midium rare",
+        "name": "Treasure Steak",
+        "image": "",
+        "__collections__": {}
+      }
+    },
+    "suppliers": {
+      "GlstSL6BrS6CIeBSbOvY": {
+        "description": "here we go",
+        "email": "info@picknpay.com",
+        "image": "",
+        "address": "KG 521 St, Kigali",
+        "phone": "+2631234562",
+        "name": "Pick N Pay",
+        "category": "",
+        "contact_person": "Gerard",
+        "__collections__": {}
+      },
+      "TfaF3xAWhgPeBXLHvLfR": {
+        "email": "lawrencegumbo@gmail.com",
+        "address": "KG 521 St, Kigali",
+        "contact_person": "Lawrence",
+        "category": "",
+        "image": "",
+        "phone": "+250789378351",
+        "description": "Lets Go Lawrence",
+        "name": "Lawrence Gumbo",
+        "__collections__": {}
+      },
+      "baC73X1AXtedoADWRRzS": {
+        "address": "3142 Unit C seke Chitungwiza",
+        "contact_person": "Lawrence",
+        "image": "",
+        "category": "2",
+        "description": "close to restaurant",
+        "name": "Veggie Wonder",
+        "email": "info@veggiewander.com",
+        "phone": "12345678",
+        "__collections__": {}
+      }
+    },
+    "test": {
+      "1": {
+        "1": "2",
+        "__collections__": {
+          "gfg": {
+            "qw": {
+              "as": "fd",
+              "__collections__": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

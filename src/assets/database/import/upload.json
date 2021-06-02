@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "wine-lab",
+  "private_key_id": "ca1ea122fefee55fecf7c47a40318927ee19e177",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCLbfPhpyrIk5hO\nbJpFWgEh40oXMoi709fUG3ZQxrD0RdaDgB5F3UCp6vuB4fYK2R+d2gRWg3Hhyerc\nkxZRxqTqN9ksjwVUNhMQGQb9Rvy6/Wcx7ZBp4HsAQLlhMhkmrfB/twV1r1xXay0X\nihtKAAh/JCi+Ks7y0uOzJ+nkRUnP0XDvaffKhs6ETkeJZw/sH+zCYY2uIXT3gEev\nBPKhQBRZNpkzTWDFlvjyzqOX4yQd6uIQyWihps8R04PpC8t0T/H99v4Q12qmcyA5\nxu3OPTR4W8VGDxqu6uEo4QVd9N9znRNWgtkjVj7WSa6jKxJUTkq07rdrVl8gl1qV\nMVu3C2jPAgMBAAECggEAA11Ob0KraDHubFzlYdHkLazgZRnDW3mCmudkdOzR6ODJ\n+KU5Xu2kIqxhxwH+21lMx3BXowbL00awWHGsLjRqVukaqVYGvXbmStxLLE+4x8t7\n4JH6r47K3+XUgQ8PkE8XVktUmPfTLAn+5Nfy4A6LAV+L/5GbvDxMPSoz+KcEhBgX\nvoEJokIThbuixdE1qIOkX1kIVJEyWa+Xzm/q/ipA3J3opnqTpQUrHE+Vv680vSK5\nzAsm6iFZQ2bCwtJwyZPkc25aupyJOJswYG4SkjlPZpGuGhFphnqmY0DL/WMgS2+V\nPffI8STlc3xSMqcQbIx1/DBPiPFSfMlQuQ4qk36kAQKBgQC9Sz0YQv3NXtltzemm\nrDhadYirpIauAe+768Bo7Tdlfbv3j6TeaNx5gI3B7GMWtNXQmgplCGJG+ZfQnwOj\nz1DEOOqsCbffWQZI3NjTMBIg59L/hIofIgpTzId8dsz7FODCpM2qD+L9g/ieDh/R\n0VOGsz+F98ByXGe8fG5B0ytPzwKBgQC8kEyr70byeCamh0Z1CshkuKmS654wo5IP\n2eIF0+4zLgFLaSMOA2y6gDOBWsazrJpl4umkKPk9jh+ZgJlC+dmeRPy1OAmCbB2j\nk8HpLHS5BkDh0yxuaNG0OjWsiGRBSkQjNaJ9aet1PvlsgrWPM4P/tEIhqXfcg75t\nkMdSyaOXAQKBgDVn1tLTg7u/eOSr5bHqgPO0mVyjzIOndDW2q9BurORrdu6/jipZ\nt2poRJZj1QkA+Boke65JkUCpBpYLZwF+ajESRdNH4qKXAVjpRhs/Qr4Z6cPBZx6l\ngfhmigspkWd9WnRP/t5uIQKZizk8jumpf0FPrSpk3dzmCTZ6fLkBlQStAoGAVgr+\ngYJI/IFpGZomw2etM5C0CE+tuoIZN1Rz97bSPdZjTtbl4RIc/ilb103l170OIync\n9UShHr6ImtH8nXxHGhpeug6dAD93ctoMpOrdRESfPKzQ3HzGHBhnv5fpL4XE+9AQ\nmmvHvpOC20n1sSePtxG5D4U2JZCUR4jF+3f5RwECgYA0jNL9hkyIj6ECqXKfUUAm\nbH5LIotrzl/3jLWsgatV2W2nnzk/mcWF1ES69nCqSWNk0HoLkPj8vOUgRMKX4zS6\neM7eS2awEAaRKiJjxGYIShy5Y00UgY2vB3uC70zhXXx2VItO2l7mvyGIa2XcL1Bf\n7BoZ6sFx9v5SLl43i3Jr9A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-cr2oj@wine-lab.iam.gserviceaccount.com",
+  "client_id": "105714324615857325091",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-cr2oj%40wine-lab.iam.gserviceaccount.com"
+}
