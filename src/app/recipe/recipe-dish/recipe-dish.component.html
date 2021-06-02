@@ -65,7 +65,13 @@
               <div class="card-body">
                 <div class="tab-content">
                   <div class="active tab-pane" id="ingredient">
-                    
+                    <ul>
+						<li *ngFor="let recipe of recipe$ | async ">
+							{{recipe.id}}
+							{{recipe.name}}
+							{{recipe.description}}
+						</li>
+					</ul> 
                   </div>
                   <!-- /.tab-pane -->
                   <div class="tab-pane" id="costings">

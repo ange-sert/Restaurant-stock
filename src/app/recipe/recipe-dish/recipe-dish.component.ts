@@ -12,19 +12,29 @@ import { map } from 'rxjs/operators';
 })
 export class RecipeDishComponent implements OnInit {
 
-
+	recipeRef: AngularFirestoreCollection<Recipes>;
+	recipe$: Observable<Recipes[]>;
 	recipeID: any[] = [];
 	public parameterValue: any[] = [];
-
-
-
 
   constructor(
   	private router: Router,
 		private activatedRoute: ActivatedRoute,
 		public db: AngularFirestore
   	) { 
-
+	this.recipeRef = this.db.collection('recipes');
+    this.recipe$ = this.recipeRef.snapshotChanges().pipe(
+      map((actions) => {
+        return actions.map((action) => {
+          const data = action.payload.doc.data() as Recipes;
+          return {
+            id: action.payload.doc.id,
+            name: data.name,
+            description: data.description,
+          };
+        });
+      })
+    );
   }
 
   ngOnInit(): void {
@@ -33,6 +43,8 @@ export class RecipeDishComponent implements OnInit {
 			this.parameterValue = parameter.recipeID
 			console.log(this.parameterValue);
 		});
+
+
 
 
 
