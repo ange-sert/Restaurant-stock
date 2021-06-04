@@ -1,29 +1,31 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Recipes } from 'src/app/models/recipes.model';
+import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class RecipesService {
 
-  constructor(
-  	private firestore: AngularFirestore
-  	) { }
+  recipeDetails!: Observable<any>;
+
+  constructor(private db: AngularFirestore) {}
 
   getRecipes() {
-    return this.firestore.collection('recipes').snapshotChanges();
+    return this.db.collection('recipes').snapshotChanges();
   }
-
+  getRecipeDetails(id: string | undefined) {
+    this.recipeDetails = this.db.object('/recipe-dish/' + id) as Observable<any>;
+ return this.db.collection('recipes').doc(id).valueChanges();
+  }
   createRecipes(recipes: Recipes) {
-    return this.firestore.collection('recipes').add(recipes);
-    return this.firestore
-		.collection("recipes")
-		.add({
-			name: recipes.name,
-			description: recipes.description,
-			image: recipes.image,
-			recipes_category: recipes.recipe_category,
-		});
+    return this.db.collection('recipes').add(recipes);
+    return this.db.collection('recipes').add({
+      name: recipes.name,
+      description: recipes.description,
+      image: recipes.image,
+      recipes_category: recipes.recipe_category,
+    });
   }
 }
