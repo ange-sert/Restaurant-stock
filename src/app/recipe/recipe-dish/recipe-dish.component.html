@@ -1,4 +1,7 @@
+
 <!-- Content Wrapper. Contains page content -->
+<div *ngFor="let recipe of recipe$ | async; index as i">
+
 <div class="content-wrapper">
 	<!-- Content Header (Page header) -->
 	<div class="content-header">
@@ -11,6 +14,7 @@
 					<ol class="breadcrumb float-sm-right">
 						<li class="breadcrumb-item"><a href="#">Home</a></li>
 						<li class="breadcrumb-item active">Recipes</li>
+						<li class="breadcrumb-item active">{{recipe.name}}</li>
 					</ol>
 				</div><!-- /.col -->
 			</div><!-- /.row -->
@@ -180,7 +184,7 @@
 											</div>
 											<!-- /.tab-pane -->
 
-											<div class="tab-pane" id="suppliers">
+											<!-- <div class="tab-pane" id="suppliers">
 												<div class="row">
 													<div class="col-md-12">
 														<ul class="products-list product-list-in-card pl-2 pr-2">
@@ -207,7 +211,7 @@
 															</ul>
 														</div>
 													</div>
-												</div>
+												</div> -->
 
 												<div class="tab-pane" id="reviews">
 
@@ -253,6 +257,6 @@
 				</div>
 
 
-
+</div>
 
 

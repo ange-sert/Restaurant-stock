@@ -2,10 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
 import {Recipes} from 'src/app/models/recipes.model';
-
-import { SuppliersService } from 'src/app/services/suppliers.service';
-import { Suppliers } from 'src/app/models/suppliers.model';
-
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -16,45 +12,37 @@ import { map } from 'rxjs/operators';
 })
 export class RecipeDishComponent implements OnInit {
 
-
-	recipeID: any[] = [];
-	public parameterValue: any[] = [];
-
-  suppliers: Suppliers[] = [];
-
-
-
+  recipeRef: AngularFirestoreCollection<Recipes>;
+  recipe$: Observable<Recipes[]>;
+  recipeID: any[] = [];
+  public parameterValue: any[] = [];
 
   constructor(
-  	private router: Router,
-		private activatedRoute: ActivatedRoute,
-		public db: AngularFirestore,
-    private suppliersService: SuppliersService,
-  	) { 
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
+    public db: AngularFirestore
+    ) { 
 
-    //read Suppliers 
-    this.suppliersService.getSuppliers().subscribe((data) => {
-      this.suppliers = data.map((e) => {
-        return {
-          id: e.payload.doc.id,
-          ...(e.payload.doc.data() as {}),
-        } as Suppliers;
-      });
+    this.activatedRoute.params.subscribe(parameter => {
+      this.parameterValue = parameter.recipeID
+      console.log(this.parameterValue);
     });
 
+    this.recipeRef = this.db.collection<{}>('recipes', ref => ref.where('recipeID', '==', this.parameterValue));
+    this.recipe$ = this.recipeRef.snapshotChanges().pipe(
+      map(actions => actions.map(a => {
+        const data = a.payload.doc.data(); // DB Questions
+        const id = a.payload.doc.id;
+        return { id, ...data };
+
+        console.log(this.recipe$);
+      }))
+      );
   }
 
   ngOnInit(): void {
-
-  	this.activatedRoute.params.subscribe(parameter => {
-			this.parameterValue = parameter.recipeID
-			console.log(this.parameterValue);
-		});
-
 
 
   }
 
 }
-
-
